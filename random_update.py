@@ -199,7 +199,7 @@ def uaku():
             ugen.append(ub)
     except:
         a=requests.get('https://github.com/badnambadshah/Tst/blob/main/user.txt').text
-        ua=open('user.txt','w')
+     #   ua=open('user.txt','w')
         aa=re.findall('line">(.*?)<',str(a))
         for un in aa:
             ua.write(un+'\n') 
